@@ -58,46 +58,6 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-```dart
-import 'package:flutter/material.dart';
-import 'package:double_tap_back_exit/double_tap_back_exit.dart';
-
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: DoubleTapBackExit(
-        duration: const Duration(seconds: 3),
-        showToast: (context) => ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Tap again to exit!')),
-        ),
-        child: const HomeScreen(),
-      ),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Double Back Exit Example')),
-      body: const Center(child: Text('Press back to test!')),
-    );
-  }
-}
-
-```
-
 ## Properties
 
 | Property           | Type                      | Default                      | Description                                                            |
