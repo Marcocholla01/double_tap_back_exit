@@ -13,3 +13,5 @@
 ## 1.0.1 - Format
 
 ## 1.0.2 - Dart Doc
+
+## 1.0.3 - Reaname DoubleBackExit to DoubleTapBackExit
