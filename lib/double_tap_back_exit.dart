@@ -32,9 +32,10 @@ class _DoubleBackExitState extends State<DoubleBackExit> {
     final now = DateTime.now();
 
     // Use provided messages or fallback to default ones
-    final exitMessage = isSwipe
-        ? widget.swipeExitMessage ?? "Swipe again to exit"
-        : widget.tapExitMessage ?? "Press back again to exit";
+    final exitMessage =
+        isSwipe
+            ? widget.swipeExitMessage ?? "Swipe again to exit"
+            : widget.tapExitMessage ?? "Press back again to exit";
 
     if (lastPressed == null || now.difference(lastPressed!) > widget.duration) {
       lastPressed = now;
@@ -67,7 +68,9 @@ class _DoubleBackExitState extends State<DoubleBackExit> {
       },
       child: GestureDetector(
         onHorizontalDragEnd: (details) {
-          if (widget.enableSwipeBack && details.primaryVelocity != null && details.primaryVelocity!.abs() > 500) {
+          if (widget.enableSwipeBack &&
+              details.primaryVelocity != null &&
+              details.primaryVelocity!.abs() > 500) {
             _handleBackAction(isSwipe: true);
           }
         },
