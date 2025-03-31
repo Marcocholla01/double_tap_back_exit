@@ -5,7 +5,7 @@ homepage: "https://github.com/Marcocholla01/double_tap_back_exit"
 
 environment:
   sdk: ">=3.7.2 <4.0.0"  # Supports Flutter SDK from 3.7.2 up to (but not including) 4.0.0
-  flutter: ">=1.17.0 <4.0.0"  # Ensures compatibility with Flutter versions from 1.17.0 to below 4.0.0
+  flutter: ">=1.17.0"
 
 
 dependencies:
