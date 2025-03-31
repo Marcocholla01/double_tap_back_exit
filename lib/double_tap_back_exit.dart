@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 ///
 /// This widget listens for back button presses or swipe gestures and prompts
 /// the user to confirm the exit within a specified duration.
-class DoubleBackExit extends StatefulWidget {
+class DoubleTapBackExit extends StatefulWidget {
   /// The main content of the app wrapped within this widget.
   final Widget child;
 
@@ -39,10 +39,10 @@ class DoubleBackExit extends StatefulWidget {
   /// Defaults to `"Swipe again to exit"`.
   final String? swipeExitMessage;
 
-  /// Creates a [DoubleBackExit] widget.
+  /// Creates a [DoubleTapBackExit] widget.
   ///
   /// Wrap your home screen widget with this to enable double back exit functionality.
-  const DoubleBackExit({
+  const DoubleTapBackExit({
     super.key,
     required this.child,
     this.duration = const Duration(seconds: 2),
@@ -54,10 +54,10 @@ class DoubleBackExit extends StatefulWidget {
   });
 
   @override
-  _DoubleBackExitState createState() => _DoubleBackExitState();
+  _DoubleTapBackExitState createState() => _DoubleTapBackExitState();
 }
 
-class _DoubleBackExitState extends State<DoubleBackExit> {
+class _DoubleTapBackExitState extends State<DoubleTapBackExit> {
   DateTime? lastPressed;
 
   /// Handles the back action based on whether it's a swipe or a tap.
