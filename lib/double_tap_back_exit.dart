@@ -1,15 +1,47 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+/// A widget that prevents accidental app exits by requiring a double-tap or swipe gesture.
+///
+/// This widget listens for back button presses or swipe gestures and prompts
+/// the user to confirm the exit within a specified duration.
 class DoubleBackExit extends StatefulWidget {
+  /// The main content of the app wrapped within this widget.
   final Widget child;
+
+  /// The time duration within which the second back press/swipe should occur to exit the app.
+  ///
+  /// Defaults to `Duration(seconds: 2)`.
   final Duration duration;
+
+  /// A custom function to show a toast/snackbar when the user presses back.
+  ///
+  /// If provided, this function will be used instead of the default snackbar.
   final Function(BuildContext)? showToast;
+
+  /// Enables or disables the swipe-to-exit feature.
+  ///
+  /// Defaults to `true`. Set to `false` to disable swipe back functionality.
   final bool enableSwipeBack;
+
+  /// Enables or disables the tap-to-exit feature.
+  ///
+  /// Defaults to `true`. Set to `false` to disable back button exit functionality.
   final bool enableTapBack;
+
+  /// The message displayed when the user presses the back button.
+  ///
+  /// Defaults to `"Press back again to exit"`.
   final String? tapExitMessage;
+
+  /// The message displayed when the user swipes to exit.
+  ///
+  /// Defaults to `"Swipe again to exit"`.
   final String? swipeExitMessage;
 
+  /// Creates a [DoubleBackExit] widget.
+  ///
+  /// Wrap your home screen widget with this to enable double back exit functionality.
   const DoubleBackExit({
     super.key,
     required this.child,
@@ -28,10 +60,11 @@ class DoubleBackExit extends StatefulWidget {
 class _DoubleBackExitState extends State<DoubleBackExit> {
   DateTime? lastPressed;
 
+  /// Handles the back action based on whether it's a swipe or a tap.
   void _handleBackAction({required bool isSwipe}) {
     final now = DateTime.now();
 
-    // Use provided messages or fallback to default ones
+    /// Determine the exit message based on user interaction type (tap/swipe)
     final exitMessage =
         isSwipe
             ? widget.swipeExitMessage ?? "Swipe again to exit"

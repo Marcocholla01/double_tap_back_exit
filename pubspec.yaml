@@ -1,6 +1,6 @@
 name: double_tap_back_exit
 description: "A Flutter widget to handle double-tap exit functionality with customizable duration and toast/snackbar messages."
-version: 1.0.1
+version: 1.0.2
 homepage: "https://github.com/Marcocholla01/double_tap_back_exit"
 
 environment:
