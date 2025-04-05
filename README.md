@@ -85,10 +85,6 @@ Here’s how DoubleTapBackExit works in action:
 
 <div align="center"> <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"> <div style="margin-bottom: 10px;"> <h4>Custom Snackbar</h4> <img src="assets/images/custom_snackbar.png" alt="Custom Snackbar Screenshot" width="400" style="margin-bottom: 20px;"/> </div> <div> <h4>Custom Toast</h4> <img src="assets/images/custom_toast.png" alt="Custom Toast" width="400"/> </div> </div> </div>
 
-Here’s an enhanced and detailed "Contributing" section, including the reason for creating the package, encouraging contributions, and the process for contributing:
-
----
-
 ## Contributing to DoubleTapBackExit
 
 We welcome contributions to **DoubleTapBackExit**! If you'd like to contribute, please follow the steps below:
