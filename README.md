@@ -81,7 +81,65 @@ Then, you do not need to pass `tapExitMessage` or `swipeExitMessage`, since your
 
 ## Demo
 
-*Add screenshots or a GIF here to show how it works*
+Here’s how DoubleTapBackExit works in action:
+
+<div align="center"> <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"> <div style="margin-bottom: 10px;"> <h4>Custom Snackbar</h4> <img src="assets/images/custom_snackbar.png" alt="Custom Snackbar Screenshot" width="400" style="margin-bottom: 20px;"/> </div> <div> <h4>Custom Toast</h4> <img src="assets/images/custom_toast.png" alt="Custom Toast" width="400"/> </div> </div> </div>
+
+Here’s an enhanced and detailed "Contributing" section, including the reason for creating the package, encouraging contributions, and the process for contributing:
+
+---
+
+## Contributing to DoubleTapBackExit
+
+We welcome contributions to **DoubleTapBackExit**! If you'd like to contribute, please follow the steps below:
+
+### **How to Contribute**
+1. **Fork the Repository**
+   - Start by forking the repository on GitHub [repo-link](https://github.com/Marcocholla01/double_tap_back_exit) to your own account.
+   
+2. **Create a New Branch**
+   - Once you’ve forked the repository, create a new branch where you’ll implement your feature or fix:
+     ```bash
+     git checkout -b feature-name
+     ```
+
+3. **Make Changes**
+   - Implement your changes or add the new feature. Ensure that your code follows the existing coding conventions.
+   
+4. **Commit Your Changes**
+   - After making changes, commit them to your branch with a clear message explaining your modifications:
+     ```bash
+     git commit -am 'Add new feature'
+     ```
+
+5. **Push Your Branch**
+   - Push your changes to your forked repository:
+     ```bash
+     git push origin feature-name
+     ```
+
+6. **Open a Pull Request**
+   - Once your changes are pushed, open a pull request (PR) from your branch to the main repository. Please provide a detailed description of the changes and the motivation behind them.
+
+
+### **Code Standards**
+- Ensure your code follows existing conventions and standards (e.g., indentation, function naming, etc.).
+- Add relevant documentation and comments to your code to make it more understandable.
+
+
+### **Why DoubleTapBackExit?**
+The **DoubleTapBackExit** package was created to enhance app usability and prevent accidental app exits. Many mobile apps experience user frustration when the back button or swipe gestures lead to unintended exits. This package ensures that users are intentionally exiting the app by requiring a double-tap or swipe gesture.
+
+This package is especially useful for applications where preventing accidental exits is crucial, such as games, messaging apps, or apps that handle important tasks.
+
+
+### **Encouragement to Star the Repo**
+If you find **DoubleTapBackExit** useful or have benefited from it in your projects, please consider giving the repository a ⭐️! Your support helps improve the visibility of the project and encourages more developers to contribute, which in turn benefits the entire community.
+
+
+### **We Appreciate Your Contributions!**
+Whether it's fixing a bug, adding a new feature, or improving the documentation, every contribution is valuable to the success of this project. Thank you for being a part of the **DoubleTapBackExit** community!
+
 
 ## License
 
